@@ -5,11 +5,31 @@
 @import "bootstrap/bootstrap.less";
 
 /* ==========================================================================
-   Base
+   USER CSS
    ========================================================================== */
 
 body { }
 
+
+img.top-logo-white, img.top-logo-black{width: 100%;}
+body.blog footer h2 {color: #7ccbc8;}
+.widget-inner h3	{ font-size: 2.3em; color: #7ccbc8;  }
+.widget-inner ul 	{ list-style-image: url("/assets/img/share_arrow_li.png"); }
+.widget-inner ul li { margin-bottom: 5px;}
+.widget-inner .form-control, .input-group .form-control	{height: 2.3em;}
+.input-group .form-control	{font-size: 1em;}
+.fallout-BG {display: none; width: 100%;}
+.video_show {display: block;}
+.fallout-BG img {width: 100%;}
+body.blog .fallout-BG, body.blog .video_show {display: none;}
+#mobileslider { display: none;} 
+
+::selection {
+	background: #FF40E6; /* Safari */
+	}
+::-moz-selection {
+	background: #FF40E6; /* Firefox */
+}
 
 
 /* ==========================================================================
@@ -26,7 +46,29 @@ body { }
 
 .content { }
 
-
+/*Blog Stuff*/
+.the-f-img { position: relative;float: left;margin-right: 20px; margin-bottom: 10px; transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out; }
+img.wp-post-image { border-radius: 4px; -moz-border-radius: 4px; -webkit-border-radius: 4px;}
+.plusSign{display:block; font-size:8em;}
+a:hover.plusSign  {display:block; font-size:8em;}
+.thepost { padding: 5px; margin-bottom: 40px; min-height: 200px;}
+.theexc	{  }
+.each-cat-post	{ padding: 10px; }
+.share-cat-col	{ width:100%; float: left; margin-left: 5px; margin-bottom: 20px; display: inline-block;}
+.post {min-height: 230px; transition-property: all;transition-duration: 350ms;transition-timing-function: ease-in-out;}
+.author-title {text-transform: capitalize; font-style: italic; color:#7ccbc8;}
+.author-txt { font-size: 1.2em;}
+#push	{ height: 190px; }
+.post h2{ font-size: 2.4em; color: white; text-transform: uppercase;}
+.post h2 a {color:#0A1414; }
+.preview h2 { font-size: 1.6em;}
+body.blog h2, body.single h1, .post h2{font-family: 'Anton', 'arial', sans-serif;}
+.entry-title	{text-transform: uppercase;}
+.dateName { font-style: italic; }
+img.alignleft {margin:0 10px 10px 0;}
+.search-submit { height: 2.05em;}
 
 /* ==========================================================================
    Primary Content
@@ -83,8 +125,161 @@ figure.alignnone { margin-left: 0; margin-right: 0; }
    Media Queries
    ========================================================================== */
 
-@media (min-width: @screen-sm) { }
+/*-------------------------------------- Responsive CSS Styles Table of Contents -----------------------------------------*/
 
-@media (min-width: @screen-md) { }
+@media only screen and (min-width: 1170px){}
+@media only screen and (min-width: 1000px) and (max-width: 1169px){
+.container {width: 93.75%;  min-height: 100%; height: auto !important; height: 100%;}
+nav .main_nav  {
+display: block;
+height: 70px;
+line-height: 70px;
+vertical-align: middle;
+margin: 0px 0px;
+text-decoration: none;
+font-size: 1.5em;
+padding: 0 20px;
+text-align: center;
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+text-transform: uppercase;
+}
+section#team_mobile  {display: none;}
+#share {min-height: 1100px;}
+.teamlogo {margin-left: 5%;}
+.txt-justified, .thepost .txt-justified	{width: 25em;
+	transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+  }
+.post { width: 30em;}
+#mobileslider { display: none;} 
 
-@media (min-width: @screen-lg) { }
+}
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1040px){
+.container {width: 100%;margin: auto auto auto auto}
+#work { display: block; }
+#work_mobile, section#team_mobile  {display: none;}
+img.smlpic { width: 75px; height: 75px; vertical-align: middle;}
+img.smlpic:hover{ width: 90px; height: 90px;transition-property: all;transition-duration: 350ms;transition-timing-function: ease-in-out;}
+.teamlogo { float:left; margin:50px 20px 0px 5px; }
+.square1,.square2,.square3, .square4, .square5, .square6, .square7, .square8, .square9, .square10 { height: 100px; width: 100px;   display:block; padding:10px;}
+.square1 { position:relative; top:0px; left:50px; background-color: #bfcf34;}
+.square2 { position:relative; top:-30px; left:121px; background-color: #54a446;}
+.square3 { position:relative; top:-60px; left:50px; background-color: #7ccbc8;}
+.square4 { position: relative; top: -300px; left: 192px ; background-color: #bfcf34; }
+.square5 { position: relative; top: -330px; left: 262px; background-color: #54a446; }
+.square6 { position: relative; top: -500px; left: 333px; background-color: #7ccbc8; }
+.square7 { position: relative; top: -530px; left: 403px; background-color: #bfcf34; }
+.square8 { position: relative; top: -700px; left: 474px; background-color: #54a446; }
+.square9 { position: relative; top: -730px; left: 544px; background-color: #7ccbc8; }
+.square10 { position: relative; top: -970px; left: 544px; background-color: #bfcf34; }
+.square1:hover,.square2:hover,.square3:hover, .square4:hover, .square5:hover, .square6:hover, .square7:hover, .square8:hover, .square9:hover, .square10:hover {
+	padding:5px;}
+#share {min-height: 1200px;}
+.post { width: 25em;}
+.txt-justified, .thepost .txt-justified	{width: 24em;
+	transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+  }
+#mobileslider { display: none;} 
+}
+
+
+
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+.container {
+	width: 100%;
+	margin: auto auto auto auto;
+}
+.truelogo { display: none;}
+.teamlogo { float:left; margin-left: 0%; }
+nav .main_nav  {
+line-height: 20px;
+vertical-align: middle;
+margin: auto auto auto auto;
+text-decoration: none;
+font-size: 1em;
+padding: 0 10px;
+text-align: center;
+}
+.square1,.square2,.square3, .square4, .square5, .square6, .square7, .square8, .square9, .square10 { height: 100px; width: 100px;   display:block; padding:10px;}
+.square1 { position:relative; top:0px; left:50px; background-color: #bfcf34;}
+.square2 { position:relative; top:-30px; left:121px; background-color: #54a446;}
+.square3 { position:relative; top:-60px; left:50px; background-color: #7ccbc8;}
+.square4 { position: relative; top: -300px; left: 192px ; background-color: #bfcf34; }
+.square5 { position: relative; top: -330px; left: 262px; background-color: #54a446; }
+.square6 { position: relative; top: -500px; left: 333px; background-color: #7ccbc8; }
+.square7 { position: relative; top: -530px; left: 403px; background-color: #bfcf34; }
+.square8 { position: relative; top: -700px; left: 474px; background-color: #54a446; }
+.square9 { position: relative; top: -730px; left: 544px; background-color: #7ccbc8; }
+.square10 { position: relative; top: -970px; left: 544px; background-color: #bfcf34; }
+.square1:hover,.square2:hover,.square3:hover, .square4:hover, .square5:hover, .square6:hover, .square7:hover, .square8:hover, .square9:hover, .square10:hover {
+	padding:5px;}
+section#work_mobile, section#team_mobile  {display: block; min-height: 630px;}
+section#work, section#theteam { display: none;}
+
+/*ARROWBOX*/
+.arrow_box_work:after, .arrow_box_about:after,
+.arrow_box_about:after,  .arrow_box_blog:after,
+.arrow_box_team:after
+ {left: 35%;}
+.contact_bg { width:76%;}
+ body.home .post {display: none;}
+#share {min-height: 400px; margin-bottom: 60px;}
+li.aboutSlider { margin-left: 5%;}
+.thepost .txt-justified	{width: 40em;
+	transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+  }
+#vidSlider { display: none;} .anythingSlider {display:none;}
+#mobileslider { display: block;} 
+.bx-wrapper img {max-width: 100%;}
+
+}
+
+
+@media only screen and (min-width: 481px) and (max-width: 530px ){ 
+	section#team_mobile  {display: block; min-height: 772px;}
+	.thepost .txt-justified	{width: 25em;}
+	.the-f-img img {width: 120px; height: 120px;
+	transition-property: all;
+  transition-duration: 350ms;
+  transition-timing-function: ease-in-out;
+	}
+#vidSlider { display: none;} .anythingSlider {display:none;}
+#mobileslider { display: block;} 
+.bx-wrapper img {max-width: 100%;}
+
+}
+
+
+
+@media only screen and (max-width: 479px){
+h1 {font-size: 1.4em;}
+h2 { font-size: 1.2em;}
+.container {width: 100%;margin: auto auto auto auto;}
+#work, #work_mobile, #about, #share, #contact, #team_mobile  { width: 100%; z-index: 0; padding: 10px;margin-bottom: 1px;  display:block;}
+#work_mobile, section#team_mobile  {display: block; height:657px; }
+section#work, section#theteam { display: none;}
+#about{margin-bottom:100px;}
+.contact_bg { width:76%;}
+#sharelogo {
+	margin: 10px 0px 0px 0px;
+	width: 100%;
+	text-align: center;
+	background: url(../img/logo.jpg) no-repeat center 20px;
+}
+.truelogo { display: none;}
+.teamlogo { margin-left: 0%;}
+}
